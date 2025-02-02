@@ -1,0 +1,30 @@
+username@hostname$
+Or:
+root@hostname #
+or simply as $ or #.
+$ represents regular users and # represents the administrative user root. Root is the most
+privileged user in a Linux system.
+
+A shell script is a text file that typically begins with a shebang, as follows:
+#!/bin/bash
+
+Shebang is a line on which #! is prefixed to the interpreter path. /bin/bash is the
+interpreter command path for Bash.
+
+Execution of a script can be done in two ways. Either we can run the script as a
+command-line argument to bash or we can grant execution permission to the script
+so it becomes executable.
+
+$ bash script.sh # Assuming script is in the current directory.
+Or:
+$ bash /home/path/script.sh # Using full path of script.sh.
+
+$ chmod a+x script.sh
+$ ./script.sh #./ represents the current directory
+Or:
+$ /home/path/script.sh # Full path of the script is used
+
+
+In Bash, each command or command sequence is delimited by using a semicolon or a new
+line. For example:
+$ cmd1 ; cmd2
